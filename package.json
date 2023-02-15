@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "babel-node src/server.js",
     "webpack": "webpack -wd eval-source-map",
-    "build": "webpack && babel src  --copy-files --out-dir distr"
+    "build": "webpack && babel src  --copy-files --out-dir distr",
+    "start": "npx sequelize-cli db:migrate && node run distr/server.js"
   },
   "keywords": [],
   "author": "",
