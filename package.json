@@ -8,7 +8,7 @@
     "dev": "babel-node src/server.js",
     "webpack": "webpack -wd eval-source-map",
     "build": "webpack && babel src  --copy-files --out-dir distr",
-    "start": "npx sequelize-cli db:migrate && node run distr/server.js"
+    "start": "npx sequelize-cli db:migrate && node distr/server.js"
   },
   "keywords": [],
   "author": "",
